@@ -1,6 +1,4 @@
 const http = require('http');
-const http = require('http');
-
 
 // server
 const server = http.createServer((req ,res)=> {
@@ -13,3 +11,4 @@ const server = http.createServer((req ,res)=> {
 server.listen(8000, '127.0.0.1', () => {
     console.log("listing to the requesting on port 8000")
 })        // this is the port number and local host address 
+

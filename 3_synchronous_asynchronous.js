@@ -25,7 +25,6 @@ console.log('Reading....');
 // one more example with the write task
 fs.readFile('./start.txt' , 'utf-8' , (err ,data) => {
     if(err) return console.log('Error');                            // this will return form the function if there is an error
-
     fs.readFile(`./${data}.txt` ,'utf-8', (err,data2) => {          // here data is passed to the next function inside i.e. callback of first function
         fs.writeFile('./final.txt' , `${data}\n${data2}`, 'utf-8' , err => {              // this will take the data from the past two function 
             console.log("your file has written");
