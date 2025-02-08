@@ -1,0 +1,29 @@
+{
+  "name": "backend_dev_node_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1_index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node 7_Project-node-farm.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viresh3104/BACKEND_DEV_NODE_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viresh3104/BACKEND_DEV_NODE_JS/issues"
+  },
+  "homepage": "https://github.com/viresh3104/BACKEND_DEV_NODE_JS#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "slugify": "^1.6.6",
+    "superagent": "^10.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
