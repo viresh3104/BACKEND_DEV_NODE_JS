@@ -5,6 +5,9 @@ const app = express();
 app.use(express.json()); //For using Middleware
 const tours = JSON.parse(fs.readFileSync('./data/tours-simple.json'));
 
+
+
+
 // api for creating the new tour
 app.post('/api/v1/tours', (req, res) => {
   const newId = tours[tours.length - 1].id + 1;
@@ -21,6 +24,9 @@ app.post('/api/v1/tours', (req, res) => {
   });
 });
 
+
+
+
 // api for getting tour by id
 app.post('/api/v1/tours/:id', (req, res) => {
   // convert id into int format
@@ -34,6 +40,10 @@ app.post('/api/v1/tours/:id', (req, res) => {
     },
   });
 });
+
+
+
+
 
 // api for updating tour by id
 // patch will updaTE ONLY one object
@@ -55,6 +65,10 @@ app.patch('/api/v1/tours/:id', (req, res) => {
   });
 });
 
+
+
+
+
 // api for delete
 app.delete('/api/v1/tours/:id', (req, res) => {
   const id = req.params.id * 1;
@@ -71,6 +85,4 @@ app.delete('/api/v1/tours/:id', (req, res) => {
   });
 });
 
-app.listen(8000, () => console.log('Server has Started on port 5000'));
-
-// use the post methid to access the data in the console in the response
+app.listen(8000, () => console.log('Server has Started on port 8000'));

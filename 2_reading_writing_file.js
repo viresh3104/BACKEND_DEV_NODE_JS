@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 // to read the file we use this format
-const textIN = fs.readFileSync('./read-this.txt', 'utf-8');
+const textIN = fs.readFileSync('./txts/read-this.txt', 'utf-8');
 console.log(textIN);
 
 // to write in the file
